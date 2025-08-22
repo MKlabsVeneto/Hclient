@@ -1,2 +1,2 @@
 # Hclient
-Hclient: multitool app developed from MK labs developer team
+Hclient: multitool app developed by the MK labs developer team
