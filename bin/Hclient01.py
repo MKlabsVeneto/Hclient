@@ -1,4 +1,5 @@
 # IMPORTS
+import os
 import time
 import random
 # LOGO, CREDITS & INITIAL PHRASES
@@ -26,7 +27,7 @@ if password == 'adminMKlabs':
     time.sleep(10)
     print("")
     print('select an option:')
-    print("1 = passgen, 2 = btcadressgen, 3 = cardnumbergen, 4 = funmode, 5 = calculator")
+    print("1 = passgen, 2 = btcadressgen, 3 = cardnumbergen, 4 = nmap local ip scan")
     print("")
     usrchoice = input()
     print("")
@@ -143,3 +144,4 @@ if password == 'adminMKlabs':
             print("card number: 3" + str(acn1) + '-' + str(acn2) + '-' + str(acn3) + '-' + str(acn4))
             print("exp date: " + str(vced1) + "/" + str(vced2))
             print("cvv: " + str(vcvv))
+    # NMAP LOCAL IP SCAN
