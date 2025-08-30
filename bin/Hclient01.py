@@ -4,6 +4,7 @@ import time
 import random
 # LOGO, CREDITS & INITIAL PHRASES
 # characters    . ┌ - ┐ | └ ┘
+jkflsj = True
 print("┌----┐   ┌----┐")
 print("|....|   |....|")
 print("|....│   |....|c")
@@ -15,13 +16,7 @@ print("|....|   |....|t                                    eula: hclienteula.net
 print("|....|   |....|")
 print("└----┘   └----┘")
 print("")
-#GREETINGS
-print("Welcome to Hclient! please enter your password:")
-print('')
-#PASSWORD CHECK
-password = input()
-print('')
-if password == 'adminMKlabs':
+if jkflsj == True:
     print("Hclient loading...")
     print("")
     time.sleep(10)
@@ -144,4 +139,6 @@ if password == 'adminMKlabs':
             print("card number: 3" + str(acn1) + '-' + str(acn2) + '-' + str(acn3) + '-' + str(acn4))
             print("exp date: " + str(vced1) + "/" + str(vced2))
             print("cvv: " + str(vcvv))
-    # NMAP LOCAL IP SCAN
+    # NMAP LOCAL IP SCAN (in maintenance)
+    if usrchoice == '4':
+        os.system('sudo su && ./bin/nmap01.sh')
