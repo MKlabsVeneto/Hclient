@@ -141,4 +141,4 @@ if jkflsj == True:
             print("cvv: " + str(vcvv))
     # NMAP LOCAL IP SCAN (in maintenance)
     if usrchoice == '4':
-        os.system('sudo su && ./bin/nmap01.sh')
+        os.system('exit && sudo su && ./bin/nmap01.sh')
