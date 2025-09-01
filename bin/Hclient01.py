@@ -142,4 +142,6 @@ if jkflsj == True:
     # NMAP LOCAL IP SCAN (in maintenance)
     if usrchoice == '4':
         os.system('exit && sudo su && ./bin/nmap01.sh')
+    # SYSTEMINFORMATION
+    # PKG UPDATER
 input()
