@@ -2,6 +2,7 @@
 import os
 import random
 # LOGO, CREDITS & INITIAL PHRASES
+print(' <Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni')
 print('distribuited on the GNU general public license 3.0v license')
 print('          _________    _________')
 print('         /        /   /        /')
