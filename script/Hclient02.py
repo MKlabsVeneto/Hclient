@@ -1,4 +1,4 @@
-# COPYRIGHT: Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni
+# COPYRIGHT: Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togn
 # LICENSE: distribuited on the GNU general public license 3.0v license
 # IMPORTS
 import os
