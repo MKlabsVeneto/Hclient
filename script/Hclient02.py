@@ -3,34 +3,34 @@ import os
 import time
 import random
 # LOGO, CREDITS & INITIAL PHRASES
-print("          _________    _________")
-print("         /        /   /        /")
-print("        /        /   /        /")
-print("       /        /   /        /")
-print("      /        /___/        /  ______   ____      ___   _______   ___   ___   ________             by MKlabs developer team")
-print("     /                     /  /      | |    |    |   | |   ____| |   \ |   | |        |            devs: MrMaxX, Marcocve")
-print("    /        ____         /  /     __| |    |    |   | |  |      |    \|   | |__    __|")
-print("   /        /   /        /  /     /    |    |    |   | |  |____  |         |    |  |               official website:")
-print("  /        /   /        /   |     |__  |    |    |   | |   ____| |         |    |  |               officialmklabsveneto.netlify.app")
-print(" /        /   /        /    |        | |    |__  |   | |  |____  |   |\    |    |  |")
+print('          _________    _________')
+print('         /        /   /        /')
+print('        /        /   /        /')
+print('       /        /   /        /')
+print('      /        /___/        /  ______   ____      ___   _______   ___   ___   ________             by MKlabs developer team')
+print('     /                     /  /      | |    |    |   | |   ____| |   \ |   | |        |            devs: MrMaxX, Marcocve')
+print('    /        ____         /  /     __| |    |    |   | |  |      |    \|   | |__    __|')
+print('   /        /   /        /  /     /    |    |    |   | |  |____  |         |    |  |               official website:')
+print('  /        /   /        /   |     |__  |    |    |   | |   ____| |         |    |  |               officialmklabsveneto.netlify.app')
+print(' /        /   /        /    |        | |    |__  |   | |  |____  |   |\    |    |  |')
 print('/________/   /_______ /     |________| |_______| |___| |_______| |___| \___|    |__|               version: 0.2 BETA')
-print("")
+print('')
 print('NOTE: some features only work on linux and its recommended to run Hclient as root or some feature will not work!')
 print('')
 print('select an option:')
-print("1 = passgen, 2 = btcadressgen, 3 = cardnumbergen, 4 = nmap local ip scan, 5 =  system information, 6 = pkg updater")
-print("")
+print('1 = passgen, 2 = btcadressgen, 3 = cardnumbergen, 4 = nmap local ip scan, 5 =  system information, 6 = pkg updater')
+print('')
 usrchoice = input()
-print("")
+print('')
 # PASSGEN
-if usrchoice == "1":
-    print("how many passwords do you want to generate?")
-    print()
+if usrchoice == '1':
+    print('how many passwords do you want to generate?')
+    print('')
     usrpinput = int(input())
-    print("")
+    print('')
     print("press ENTER to execute")
     input()
-    print("")
+    print('')
     pgcharacters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890*#_!$%&'
     for i in range(usrpinput): print(
         random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
@@ -41,7 +41,7 @@ if usrchoice == "1":
             pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
             pgcharacters) + random.choice(pgcharacters))
 # BTCADRESSGEN
-if usrchoice == '2':
+elif usrchoice == '2':
     print('how many adresses do you want to generate?')
     print('')
     usrainput = int(input())
@@ -72,62 +72,62 @@ if usrchoice == '2':
         btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
         btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters))
 # CARNUMBERGEN
-if usrchoice == "3":
-    print("which card do you want to generate?")
-    print("")
-    print("1 = Visa")
-    print("2 = Mastercard")
-    print("3 = American Express")
-    print("")
+elif usrchoice == '3':
+    print('which card do you want to generate?')
+    print('')
+    print('1 = Visa')
+    print('2 = Mastercard')
+    print('3 = American Express')
+    print('')
     cng = input()
-    print("")
+    print('')
     # VISA
-    if cng == "1":
-        print("VISA")
+    if cng == '1':
+        print('VISA')
         vcn1 = random.randint(000, 999)
         vcn2 = random.randint(0000,9999)
         vcn3 = random.randint(0000,9999)
         vcn4 = random.randint(0000,9999)
         vced1 = random.randint(1, 12)
-        expyear = "2025", "2026", "2027", "2028", "2029", "2030", "2031"
+        expyear = '2025', '2026', '2027', '2028', '2029', '2030', '2031'
         vced2 = random.choice(expyear)
         vcvv = random.randint(000, 999)
-        print("")
-        print("card number: 4" + str(vcn1) + '-' + str(vcn2) + '-' + str(vcn3) + '-' + str(vcn4))
-        print("exp date: " + str(vced1) + "/" + str(vced2))
-        print("cvv: " + str(vcvv))
+        print('')
+        print('card number: 4' + str(vcn1) + '-' + str(vcn2) + '-' + str(vcn3) + '-' + str(vcn4))
+        print('exp date: ' + str(vced1) + '/' + str(vced2))
+        print('cvv: ' + str(vcvv))
     # MASTERCARD
-    if cng == "2":
-        print("MASTERCARD")
+    elif cng == '2':
+        print('MASTERCARD')
         mcn1 = random.randint(000, 999)
         mcn2 = random.randint(0000,9999)
         mcn3 = random.randint(0000,9999)
         mcn4 = random.randint(0000,9999)
         vced1 = random.randint(1, 12)
-        expyear = "2025", "2026", "2027", "2028", "2029", "2030", "2031", "2032"
+        expyear = '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032'
         vced2 = random.choice(expyear)
         vcvv = random.randint(000, 999)
-        print("")
-        print("card number: 5" + str(mcn1) + '-' + str(mcn2) + '-' + str(mcn3) + '-' + str(mcn4))
-        print("exp date: " + str(vced1) + "/" + str(vced2))
-        print("cvv: " + str(vcvv))
+        print('')
+        print('card number: 5' + str(mcn1) + '-' + str(mcn2) + '-' + str(mcn3) + '-' + str(mcn4))
+        print('exp date: ' + str(vced1) + '/' + str(vced2))
+        print('cvv: ' + str(vcvv))
     # AMERICAN EXPRESS
-    if cng == "3":
+    elif cng == "3":
         print('AMERICAN EXPRESS')
         acn1 = random.randint(000, 999)
         acn2 = random.randint(0000,9999)
         acn3 = random.randint(0000,9999)
         acn4 = random.randint(0000,9999)
         vced1 = random.randint(1, 12)
-        expyear = "2025", "2026", "2027", "2028", "2029", "2030"
+        expyear = '2025', '2026', '2027', '2028', '2029', '2030'
         vced2 = random.choice(expyear)
         vcvv = random.randint(000, 999)
-        print("")
-        print("card number: 3" + str(acn1) + '-' + str(acn2) + '-' + str(acn3) + '-' + str(acn4))
-        print("exp date: " + str(vced1) + "/" + str(vced2))
-        print("cvv: " + str(vcvv))
+        print('')
+        print('card number: 3' + str(acn1) + '-' + str(acn2) + '-' + str(acn3) + '-' + str(acn4))
+        print('exp date: ' + str(vced1) + '/' + str(vced2))
+        print('cvv: ' + str(vcvv))
 # NMAP LOCAL IP SCAN (in maintenance)
-if usrchoice == '4':
+elif usrchoice == '4':
     finalip = ''
     print('enter target local ip: example: 192.168.0.1')
     print('')
