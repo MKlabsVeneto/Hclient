@@ -15,10 +15,8 @@ print("|    |   |    |t                                    eula: hclienteula.net
 print("|    |   |    |")
 print("|____|   |____|                                     version: 0.1 BETA")
 print("")
-print("Hclient loading...")
-print("")
-time.sleep(10)
-print("")
+print('its recommended to run Hclient as root or some feature will not work!')
+print('')
 print('select an option:')
 print("1 = passgen, 2 = btcadressgen, 3 = cardnumbergen, 4 = nmap local ip scan")
 print("")
@@ -26,9 +24,6 @@ usrchoice = input()
 print("")
 # PASSGEN
 if usrchoice == "1":
-    print("passgen loading...")
-    print("")
-    time.sleep(10)
     print("how many passwords do you want to generate?")
     print()
     usrpinput = int(input())
@@ -47,9 +42,6 @@ if usrchoice == "1":
             pgcharacters) + random.choice(pgcharacters))
 # BTCADRESSGEN
 if usrchoice == '2':
-    print('adressgen loading...')
-    print('')
-    time.sleep(10)
     print('how many adresses do you want to generate?')
     print('')
     usrainput = int(input())
@@ -81,9 +73,6 @@ if usrchoice == '2':
         btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters))
 # CARNUMBERGEN
 if usrchoice == "3":
-    print("cardnumbergen loading...")
-    print("")
-    time.sleep(10)
     print("which card do you want to generate?")
     print("")
     print("1 = Visa")
@@ -139,7 +128,38 @@ if usrchoice == "3":
         print("cvv: " + str(vcvv))
 # NMAP LOCAL IP SCAN (in maintenance)
 if usrchoice == '4':
-    os.system('exit && sudo su && ./bin/nmap01.sh')
+    finalip = ''
+    print('enter target local ip: example: 192.168.0.1')
+    print('')
+    usrlocalip = input()
+    print('')
+    print('enter target port: example: 24')
+    print('')
+    usrport = input()
+    print('')
+    print('does the target ip loos like this: ',usrlocalip + '/' + usrport, '? y/n')
+    print('')
+    usrnlisfr = input()
+    print('')
+    if usrnlisfr == 'y':
+        finalip = usrlocalip + '/' + usrport
+        os.system('sudo su && nmap -sS ' + finalip)
+    elif usrnlisfr == 'n':
+        print('relaunch program and insert correct ip')
+        input()
 # SYSTEMINFORMATION
+if usrchoice == '5':
+    os.system(fastfetch)
 # PKG UPDATER
+if usrchoice == '6':
+    print('select package manager: apt, dnf, pacman')
+    print('')
+    usrpkgmchoice = input()
+    print('')
+    if usrpkgmchoice == 'apt':
+        os.system('sudo apt update && upgrade')
+    elif usrpkgmchoice == 'dnf':
+        os.system('sudo dnf update && upgrade')
+    elif usrpkgmchoice == 'pacman':
+        os.system('sudo pacman -Syu')
 input()
