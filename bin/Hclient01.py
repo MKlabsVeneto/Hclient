@@ -149,7 +149,7 @@ if usrchoice == '4':
         input()
 # SYSTEMINFORMATION
 if usrchoice == '5':
-    os.system(fastfetch)
+    os.system('fastfetch')
 # PKG UPDATER
 if usrchoice == '6':
     print('select package manager: apt, dnf, pacman')
