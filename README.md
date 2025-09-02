@@ -1,5 +1,5 @@
 # Hclient
-distribuited on the GNU 3v license
+distribuited on the GNU general public license 3.0v license
 
 Hclient: multitool app developed by the MK labs developer team,
 please do not steal, ask the creator for republish permit and put the MKlabs Veneto official tag on the republished copy,
