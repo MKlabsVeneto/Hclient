@@ -3,6 +3,7 @@ import os
 import time
 import random
 # LOGO, CREDITS & INITIAL PHRASES
+print('distribuited on the GNU 3v license')
 print('          _________    _________')
 print('         /        /   /        /')
 print('        /        /   /        /')
@@ -15,7 +16,7 @@ print('  /        /   /        /   |     |__  |    |    |   | |   ____| |       
 print(' /        /   /        /    |        | |    |__  |   | |  |____  |   |\    |    |  |')
 print('/________/   /_______ /     |________| |_______| |___| |_______| |___| \___|    |__|               version: 0.2 BETA')
 print('')
-print('NOTE: some features only work on linux and its recommended to run Hclient as root or some feature will not work!')
+print('some features only work on linux and its recommended to run Hclient as root or some feature will not work!')
 print('')
 print('select an option:')
 print('1 = passgen, 2 = btcadressgen, 3 = cardnumbergen, 4 = nmap local ip scan, 5 =  system information, 6 = pkg updater')
