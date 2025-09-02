@@ -3,17 +3,17 @@ import os
 import time
 import random
 # LOGO, CREDITS & INITIAL PHRASES
-jkflsj = True
-print("______   ______")
-print("|    |   |    |")
-print("|    │   |    |c")
-print("|    │___|    |l                                    by MKlabs developer team")
-print("|             |i                                    devs: MrMaxX, Marcocve")
-print("|     ___     |e")
-print("|    |   |    |n")
-print("|    |   |    |t                                    official website: officialmklabsveneto.netlify.app")
-print("|    |   |    |")
-print("|____|   |____|                                     version: 0.1 BETA")
+print("          _________    _________")
+print("         /        /   /        /")
+print("        /        /   /        /")
+print("       /        /   /        /")
+print("      /        /___/        /  ______   ____      ___   _______   ___   ___   ________             by MKlabs developer team")
+print("     /                     /  /      | |    |    |   | |   ____| |   \ |   | |        |            devs: MrMaxX, Marcocve")
+print("    /        ____         /  /     __| |    |    |   | |  |      |    \|   | |__    __|")
+print("   /        /   /        /  /     /    |    |    |   | |  |____  |         |    |  |               official website:")
+print("  /        /   /        /   |     |__  |    |    |   | |   ____| |         |    |  |               officialmklabsveneto.netlify.app")
+print(" /        /   /        /    |        | |    |__  |   | |  |____  |   |\    |    |  |")
+print('/________/   /_______ /     |________| |_______| |___| |_______| |___| \___|    |__|               version: 0.2 BETA')
 print("")
 print('NOTE: some features only work on linux and its recommended to run Hclient as root or some feature will not work!')
 print('')
