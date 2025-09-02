@@ -143,7 +143,7 @@ if usrchoice == '4':
     print('')
     if usrnlisfr == 'y':
         finalip = usrlocalip + '/' + usrport
-        os.system('sudo su && nmap -sS ' + finalip)
+        os.system('nmap -sS ' + finalip)
     elif usrnlisfr == 'n':
         print('relaunch program and insert correct ip')
         input()

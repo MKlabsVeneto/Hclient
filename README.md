@@ -6,5 +6,4 @@ MKlabs Veneto official website: https://officialmklabsveneto.netlify.app
 
 requirements: linux, python 3, fastfetch and nmap installed and run in root
 
-changelog: developing 4th feature: nmap scan
-           2 new features! system information and pkg updater
+changelog: confirmed 3 new features: nmap scan, system information and pkg updater
