@@ -1,6 +1,5 @@
 # IMPORTS
 import os
-import time
 import random
 # LOGO, CREDITS & INITIAL PHRASES
 print('distribuited on the GNU general public license 3.0v license')
