@@ -6,7 +6,7 @@ please do not steal, ask the creator for republish permit and put the MKlabs Ven
 do not use for malicious intent, we do not take any responsability for the damage done.
 MKlabs Veneto official website: https://officialmklabsveneto.netlify.app
 
-requirements: linux, python 3, fastfetch and nmap installed and run in root
+requirements: linux (for some features), python 3, fastfetch and nmap installed and run in root
 
 changelog: confirmed 3 new features: nmap scan, system information and pkg updater
            added a more stilish logo 😎
