@@ -3,30 +3,9 @@
 # IMPORTS
 import os
 import random
-# LOGO, CREDITS & INITIAL PHRASES
-print('Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs')
-print('distribuited on the GNU general public license 3.0v license')
-print('          _________    _________')
-print('         /        /   /        /')
-print('        /        /   /        /')
-print('       /        /   /        /')
-print('      /        /___/        / _________   ____       ____  _________   ____     ____  _____________           by MKlabs developer team')
-print('     /                     / /        /  /   /      /   / /   _____/  /    |   /   / /            /           devs: MrMaxX, Marcocve')
-print('    /        ____         / /   _____/  /   /      /   / /   /       /     |  /   / /____    ____/')
-print('   /        /   /        / /   /       /   /      /   / /   /____   /      | /   /      /   /                 official website:')
-print('  /        /   /        / /   /_____  /   /      /   / /    ____/  /   /|  |/   /      /   /                  officialmklabsveneto.netlify.app')
-print(' /        /   /        / /         / /   /____  /   / /    /____  /   / |      /      /   /')
-print('/________/   /_______ / /_________/ /________/ /___/ /_________/ /___/  |_____/      /___/                    version: 0.2 BETA')
-print('')
-print('some features only work on linux and its recommended to run Hclient as root or some feature will not work!')
-print('')
-print('select an option:')
-print('1 = passgen, 2 = btcadressgen, 3 = cardnumbergen, 4 = nmap local ip scan, 5 =  system information, 6 = pkg updater')
-print('')
-usrchoice = input()
-print('')
-# PASSGEN
-if usrchoice == '1':
+#defs
+#defs-passgen
+def passgen():
     print('how many passwords do you want to generate?')
     print('')
     usrpinput = int(input())
@@ -43,8 +22,8 @@ if usrchoice == '1':
             pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
             pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
             pgcharacters) + random.choice(pgcharacters))
-# BTCADRESSGEN
-elif usrchoice == '2':
+#defs-btcadressgen
+def btcadressgen():
     print('how many adresses do you want to generate?')
     print('')
     usrainput = int(input())
@@ -74,8 +53,8 @@ elif usrchoice == '2':
         btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
         btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
         btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters))
-# CARNUMBERGEN
-elif usrchoice == '3':
+#defs-cardnumbergen
+def cardnumbergen():
     print('which card do you want to generate?')
     print('')
     print('1 = Visa')
@@ -129,8 +108,8 @@ elif usrchoice == '3':
         print('card number: 3' + str(acn1) + '-' + str(acn2) + '-' + str(acn3) + '-' + str(acn4))
         print('exp date: ' + str(vced1) + '/' + str(vced2))
         print('cvv: ' + str(vcvv))
-# NMAP LOCAL IP SCAN (in maintenance)
-elif usrchoice == '4':
+#defs-nmap
+def nmap():
     finalip = ''
     print('enter target local ip: example: 192.168.0.1')
     print('')
@@ -150,11 +129,11 @@ elif usrchoice == '4':
     elif usrnlisfr == 'n':
         print('relaunch program and insert correct ip')
         input()
-# SYSTEMINFORMATION
-if usrchoice == '5':
+#defs-sysinfo
+def sysinfo():
     os.system('fastfetch')
-# PKG UPDATER
-if usrchoice == '6':
+#defs-pkgupdater
+def pkgupdater():
     print('select package manager: apt, dnf, pacman')
     print('')
     usrpkgmchoice = input()
@@ -165,6 +144,46 @@ if usrchoice == '6':
         os.system('sudo dnf update && upgrade')
     elif usrpkgmchoice == 'pacman':
         os.system('sudo pacman -Syu')
+# LOGO, CREDITS & INITIAL PHRASES
+print('Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs')
+print('distribuited on the GNU general public license 3.0v license')
+print('          _________    _________')
+print('         /        /   /        /')
+print('        /        /   /        /')
+print('       /        /   /        /')
+print('      /        /___/        / _________   ____       ____  _________   ____     ____  _____________           by MKlabs developer team')
+print('     /                     / /        /  /   /      /   / /   _____/  /    |   /   / /            /           devs: MrMaxX, Marcocve')
+print('    /        ____         / /   _____/  /   /      /   / /   /       /     |  /   / /____    ____/')
+print('   /        /   /        / /   /       /   /      /   / /   /____   /      | /   /      /   /                 official website:')
+print('  /        /   /        / /   /_____  /   /      /   / /    ____/  /   /|  |/   /      /   /                  officialmklabsveneto.netlify.app')
+print(' /        /   /        / /         / /   /____  /   / /    /____  /   / |      /      /   /')
+print('/________/   /_______ / /_________/ /________/ /___/ /_________/ /___/  |_____/      /___/                    version: 0.2 BETA')
+print('')
+print('some features only work on linux and its recommended to run Hclient as root or some feature will not work!')
+print('')
+print('select an option:')
+print('1 = passgen, 2 = btcadressgen, 3 = cardnumbergen, 4 = nmap local ip scan, 5 =  system information, 6 = pkg updater')
+print('')
+usrchoice = input()
+print('')
+# PASSGEN
+if usrchoice == '1':
+    passgen()
+# BTCADRESSGEN
+elif usrchoice == '2':
+    btcadressgen()
+# CARNUMBERGEN
+elif usrchoice == '3':
+    cardnumbergen()
+# NMAP LOCAL IP SCAN (in maintenance)
+elif usrchoice == '4':
+    nmap()
+# SYSTEMINFORMATION
+if usrchoice == '5':
+    sysinfo()
+# PKG UPDATER
+if usrchoice == '6':
+    pkgupdater()
 input()
 # COPYRIGHT: Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs
 # LICENSE: distribuited on the GNU general public license 3.0v license
