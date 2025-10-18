@@ -1,4 +1,4 @@
-# COPYRIGHT: Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs
+# COPYRIGHT: Hclient, a CLI multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs
 # LICENSE: distribuited on the GNU general public license 3.0v license
 # IMPORTS
 import os
@@ -145,7 +145,7 @@ def pkgupdater():
     elif usrpkgmchoice == 'pacman':
         os.system('sudo pacman -Syu')
 # LOGO, CREDITS & INITIAL PHRASES
-print('Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs')
+print('Hclient, a CLI multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs')
 print('distribuited on the GNU general public license 3.0v license')
 print('          _________    _________')
 print('         /        /   /        /')
