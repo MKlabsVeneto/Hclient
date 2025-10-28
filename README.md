@@ -13,3 +13,4 @@ changelog: confirmed 3 new features: nmap scan, system information and pkg updat
            version 0.2 is out now!
            fixed some visual bugs
            version 0.2.1 is out now! this new update present an entirely reordered and more understandable code for those who want to modify it.
+           version 0.2.2 is out now! this new update present a simplyfied and lighter code and added a new feature to passgen.

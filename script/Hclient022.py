@@ -6,53 +6,34 @@ import random
 #defs
 #defs-passgen
 def passgen():
+    pgletters = 'qwertyuiopasdfghjklzxcvbnm'
+    pglettersandnumbers = 'qwertyuiopasdfghjklzxcvbnm1234567890'
+    print('what type of passwords do you want to generate? 1 = numbers only, 2 = letters only, 3 = numbers and letters')
+    print('')
+    usrpgchoice = input()
+    print('')
     print('how many passwords do you want to generate?')
     print('')
     usrpinput = int(input())
     print('')
-    print("press ENTER to execute")
-    input()
-    print('')
-    pgcharacters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890*#_!$%&'
-    for i in range(usrpinput): print(
-        random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
-            pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
-            pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
-            pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
-            pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
-            pgcharacters) + random.choice(pgcharacters) + random.choice(pgcharacters) + random.choice(
-            pgcharacters) + random.choice(pgcharacters))
+    if usrpgchoice == '1':
+        for i in range(usrpinput):
+            print(random.randint(0,9),random.randint(0,9),random.randint(0,9),random.randint(0,9),random.randint(0,9),random.randint(0,9),random.randint(0,9),random.randint(0,9),random.randint(0,9),random.randint(0,9))
+    if usrpgchoice == '2':
+        for i in range(usrpinput):
+            print(random.choice(pgletters),random.choice(pgletters),random.choice(pgletters),random.choice(pgletters),random.choice(pgletters),random.choice(pgletters),random.choice(pgletters),random.choice(pgletters),random.choice(pgletters),random.choice(pgletters))
+    if usrpgchoice == '3':
+        for i in range(usrpinput):
+            print(random.choice(pglettersandnumbers),random.choice(pglettersandnumbers),random.choice(pglettersandnumbers),random.choice(pglettersandnumbers),random.choice(pglettersandnumbers),random.choice(pglettersandnumbers),random.choice(pglettersandnumbers),random.choice(pglettersandnumbers),random.choice(pglettersandnumbers), random.choice(pglettersandnumbers))
 #defs-btcadressgen
 def btcadressgen():
     print('how many adresses do you want to generate?')
     print('')
     usrainput = int(input())
     print('')
-    print('press ENTER to execute')
-    input()
-    print('')
     btcagcharacters = 'abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ123456789'
-    for i in range(usrainput): print(random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters) + random.choice(
-        btcagcharacters) + random.choice(btcagcharacters) + random.choice(btcagcharacters))
+    for i in range(usrainput):
+        print(random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters),random.choice(btcagcharacters)) 
 #defs-cardnumbergen
 def cardnumbergen():
     print('which card do you want to generate?')
