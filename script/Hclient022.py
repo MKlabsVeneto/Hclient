@@ -122,7 +122,18 @@ def nmap():
         input()
 #defs-sysinfo
 def sysinfo():
-    os.system('fastfetch')
+    print('select fetch type: 1 = neofetch, 2 = fastfetch, 3 = macchina, 4 = hyfetch')
+    print('')
+    uft = input()
+    print('')
+    if uft == '1':
+        os.system('clear && neofetch')
+    elif uft == '2':
+        os.system('clear && fastfetch')
+    elif uft == '3':
+        os.system('clear && macchina')
+    elif uft == '4':
+        os.system('clear && hyfetch')
 #defs-pkgupdater
 def pkgupdater():
     print('select package manager: apt, dnf, pacman')

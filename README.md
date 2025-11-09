@@ -14,3 +14,4 @@ changelog: confirmed 3 new features: nmap scan, system information and pkg updat
            fixed some visual bugs
            version 0.2.1 is out now! this new update present an entirely reordered and more understandable code for those who want to modify it.
            version 0.2.2 is out now! this new update present a simplyfied and lighter code, added a new feature to passgen and curdnumbergen.
+           version 0.2.3 is out now! this new update present a new feature for system information and added a python script to the "script" folder for installing all the requirements.
