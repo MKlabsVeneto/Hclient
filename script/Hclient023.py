@@ -1,4 +1,4 @@
-# COPYRIGHT: Hclient, a CLI multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs
+# COPYRIGHT: Hclient, a CLI multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, mrmaxxarch
 # LICENSE: distribuited on the GNU general public license 3.0v license
 # IMPORTS
 import os
@@ -147,19 +147,19 @@ def pkgupdater():
     elif usrpkgmchoice == 'pacman':
         os.system('sudo pacman -Syu')
 # LOGO, CREDITS & INITIAL PHRASES
-print('Hclient, a CLI multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs')
+print('Hclient, a CLI multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, mrmaxxarch')
 print('distribuited on the GNU general public license 3.0v license')
 print('          _________    _________')
 print('         /        /   /        /')
 print('        /        /   /        /')
 print('       /        /   /        /')
-print('      /        /___/        / _________   ____       ____  _________   ____     ____  _____________           by MKlabs developer team')
-print('     /                     / /        /  /   /      /   / /   _____/  /    |   /   / /            /           devs: MrMaxX, Marcocve')
+print('      /        /___/        / _________   ____       ____  _________   ____     ____  _____________           by MaxX')
+print('     /                     / /        /  /   /      /   / /   _____/  /    |   /   / /            /           devs: MrMaxX')
 print('    /        ____         / /   _____/  /   /      /   / /   /       /     |  /   / /____    ____/')
-print('   /        /   /        / /   /       /   /      /   / /   /____   /      | /   /      /   /                 official website:')
-print('  /        /   /        / /   /_____  /   /      /   / /    ____/  /   /|  |/   /      /   /                  officialmklabsveneto.netlify.app')
+print('   /        /   /        / /   /       /   /      /   / /   /____   /      | /   /      /   /')
+print('  /        /   /        / /   /_____  /   /      /   / /    ____/  /   /|  |/   /      /   /')
 print(' /        /   /        / /         / /   /____  /   / /    /____  /   / |      /      /   /')
-print('/________/   /_______ / /_________/ /________/ /___/ /_________/ /___/  |_____/      /___/                    version: 0.2 BETA')
+print('/________/   /_______ / /_________/ /________/ /___/ /_________/ /___/  |_____/      /___/                    version: 0.2.3 BETA')
 print('')
 print('some features only work on linux and its recommended to run Hclient as root or some feature will not work!')
 print('')
@@ -187,5 +187,5 @@ if usrchoice == '5':
 if usrchoice == '6':
     pkgupdater()
 input()
-# COPYRIGHT: Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, MKlabs
+# COPYRIGHT: Hclient, a multi tool python program for general tech purposes.    Copyright (C) 2025  Kevin De Togni, mrmaxxarch
 # LICENSE: distribuited on the GNU general public license 3.0v license
