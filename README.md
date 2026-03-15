@@ -6,3 +6,4 @@ Hclient: a CLI multitool app developed by MaxX, please do not steal and put the 
 requirements: linux (for some features), python 3, fastfetch and nmap installed and run in root
 
 changelog: confirmed 3 new features: nmap scan, system information and pkg updater added a more stilish logo 😎 version 0.2 is out now! fixed some visual bugs version 0.2.1 is out now! this new update present an entirely reordered and more understandable code for those who want to modify it. version 0.2.2 is out now! this new update present a simplyfied and lighter code, added a new feature to passgen and curdnumbergen. version 0.2.3 is out now! this new update present a new feature for system information and added a python script to the "script" folder for installing all the requirements.
+Hclient has stopped development. i transitioned the current project to DevClient, a Rust copy of the original Hclient code
